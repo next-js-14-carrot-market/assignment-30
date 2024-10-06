@@ -98,5 +98,5 @@ export async function handleForm(_: unknown, formData: FormData): Promise<FormSt
   const session = await getSession();
   session.id = user.id;
   await session.save();
-  redirect("/profile");
+  redirect("/");
 }
